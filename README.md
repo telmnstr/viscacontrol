@@ -56,20 +56,20 @@ in my case ethernet is better for stage to front-of-house control.
 
 ## Current software limitations
 
-### PTZ doesn't include speed
+#### PTZ doesn't include speed
 
 The Cisco all-in-one command to move camera doesn't include speed, and I didn't
 implement saving speed with movement presets. The main thing for movement
 for me is those slow sweeping audience pans that include zoom like on Arsino Hall.
 Can manually make this happen.
 
-### Joystick support
+#### Joystick support
 
 I have joystick support written but I suck at Python, it jams up keyboard control
 when it's disabled so I pulled it out. Need to allow command line configuration of
 stuff like joystick, IP Address and position file but that is for the future.
 
-### Not much support for camera image features
+#### Not much support for camera image features
 
 I didn't get around to things like white balance and backlight compensation. Haven't
 played with them, maybe in the future. Same with focus.
@@ -80,13 +80,16 @@ I used Cisco's documentation and an Arduino project as a reference. It might be 
 in the future to contribute some of my ideas to the Arduino project and make a custom
 PCB with those switcher style buttons. We will see.
 
+The Cisco reference has pinouts for cables and full protocol documentation. It's really good.
+[Cisco reference PDF](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/camera/precisionhd/user_guide/precisionhd_1080p-720p_camera_user_guide.pdf)
 
-[Cisco command reference PDF](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/camera/precisionhd/user_guide/precisionhd_1080p-720p_camera_user_guide.pdf)
-
+Another project that is stand alone, easy list of commands used. Might be worth contributing to this in the future to
+make stand-alone version of what I am after.
 [Arduino Project with good info](https://github.com/foxworth42/arduino-VISCA-controller/blob/master/visca_controller/src/visca_controller.h)
 
 Lantronix MSS Serial Server default priv password = system
 
+### 1st cam to 2nd cam cable pinout
 ```
 
 RJ11 to RJ45 chain cable, gold pins upwards and facing you on plastic RJ45/RJ11. Pin #1 is left
@@ -94,4 +97,12 @@ RJ45 Standard cat5:  WhiteOrange Orange WhiteGreen Blue WhiteBlue Green WhiteBro
 RJ11 6 position   :  Orange WhiteOrange WhiteGreen Green WhiteBrown NotConnected
 
 ```
+
+Will post DB25 to RJ45 adapter/pinout soon
+
+## Running the script
+
+- Configure serial server for 9600,8,n,1
+- Edit the target IP and port number for the serial server you are using
+- python 2.7, pygame are required
 
