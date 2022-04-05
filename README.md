@@ -23,16 +23,16 @@ I tried.
     -  Units can daisy chain RS232 control unit to unit
     -  Quality optics (might be Sony guts, not sure)
     -  Standard tripod mount
-  -  Not so good
-    -  Soft feel coating gets sticky with age
-      -  Baby powder will remove stickyness
-    -  Ethernet port only for firmware upgrades
-      -  Couldn't seem to do VISCA over TCP, portscanned it
-      -  This would be epic win, could ditch ethernet to serial bridge
-    -  Black plastic cover often missing from units on surplus market
-      -  Working on 3d printable replacement
-    -  Daisy chain port is RJ11
-      -  Have to make custom cables (see below)
+  - Not so good
+    - Soft feel coating gets sticky with age
+      - Baby powder will remove stickyness
+    - Ethernet port only for firmware upgrades
+      - Couldn't seem to do VISCA over TCP, portscanned it
+      - This would be epic win, could ditch ethernet to serial bridge
+    - Black plastic cover often missing from units on surplus market
+      - Working on 3d printable replacement
+    - Daisy chain port is RJ11
+      - Have to make custom cables (see below)
 
 ## VISCA Control - About the software
 
@@ -87,9 +87,11 @@ PCB with those switcher style buttons. We will see.
 
 Lantronix MSS Serial Server default priv password = system
 
+```
+
 RJ11 to RJ45 chain cable, gold pins upwards and facing you on plastic RJ45/RJ11. Pin #1 is left
 RJ45 Standard cat5:  WhiteOrange Orange WhiteGreen Blue WhiteBlue Green WhiteBrown Brown
 RJ11 6 position   :  Orange WhiteOrange WhiteGreen Green WhiteBrown NotConnected
 
-
+```
 
