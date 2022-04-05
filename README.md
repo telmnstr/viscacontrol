@@ -1,2 +1,2 @@
 # viscacontrol
-[Image of UI](docs/viscacontrol.png)
+![Image of UI](docs/viscacontrol.png)
